@@ -4,40 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MelodyVN Online</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f3f4f6; margin: 0; padding: 0; }
-        header { background-color: #ffffff; text-align: center; padding: 20px; border-bottom: 2px solid #e5e7eb; }
-        hgroup h1 { margin: 0; color: #111827; }
-        hgroup h2 { margin: 5px 0 0; color: #6b7280; font-size: 16px; font-weight: normal; }
-        main { max-width: 1000px; margin: 20px auto; padding: 0 20px; display: flex; gap: 20px; }
-        .content { flex: 3; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        aside { flex: 1; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); height: fit-content; }
-        .video-container { margin-top: 15px; }
-        video { width: 100%; border-radius: 8px; background-color: #ffffff; border: 1px solid #d1d5db; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
-        audio { width: 100%; margin-top: 8px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-        table, th, td { border: 1px solid #d1d5db; }
-        th, td { padding: 8px; text-align: center; }
-        th { background-color: #f9fafb; }
-        footer { background-color: #1f2937; color: #9ca3af; text-align: center; padding: 15px; margin-top: 30px; font-size: 14px; }
-    </style>
+    <link rel="stylesheet" href="b4.css">
 </head>
-<body>
-    <header>
+<body class="b4">
+    <header class="b4-header">
         <hgroup>
             <h1>MelodyVN Online</h1>
             <h2>Học nhạc mọi lúc mọi nơi</h2>
         </hgroup>
     </header>
 
-    <main>
-        <div class="content">
+    <main class="b4-main">
+        <div class="b4-content">
             <section>
                 <h2>Bài học: Hợp âm cơ bản Guitar</h2>
                 <div class="video-container">
-                    <video width="640" height="360" controls preload="metadata">
-                        <source src="bai_hoc_guitar.mp4" type="video/mp4">
-                        <source src="bai_hoc_guitar.webm" type="video/webm">
+                    <video width="640" height="360" controls preload="metadata" class="b4-video">
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
                         <p>Trình duyệt của bạn không hỗ trợ video.</p>
                     </video>
                 </div>
@@ -47,23 +30,22 @@
             <section>
                 <h2>Nghe thử giai điệu mẫu</h2>
                 <p>Bài 1: Canon in D – Piano</p>
-                <audio controls preload="none">
-                    <source src="canon_piano.mp3" type="audio/mpeg">
-                    <source src="canon_piano.ogg" type="audio/ogg">
+                <audio controls preload="none" class="b4-audio">
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
                     <p>Trình duyệt không hỗ trợ audio.</p>
                 </audio>
 
                 <p>Bài 2: Für Elise – Piano</p>
-                <audio controls autoplay loop preload="none">
-                    <source src="fur_elise.mp3" type="audio/mpeg">
+                <audio controls preload="none" class="b4-audio">
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
                     <p>Trình duyệt không hỗ trợ audio.</p>
                 </audio>
             </section>
         </div>
 
-        <aside>
+        <aside class="b4-aside">
             <h3>Lịch học tuần này</h3>
-            <table>
+            <table class="b4-table">
                 <thead>
                     <tr>
                         <th>Ngày</th>
@@ -88,7 +70,7 @@
         </aside>
     </main>
 
-    <footer>
+    <footer class="b4-footer">
         <p>Trung tâm âm nhạc MelodyVN - 123 Đường Nhạc, Quận Âm - Email: info@melodyvn.com - Hotline: 1900 0789</p>
     </footer>
 </body>

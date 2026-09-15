@@ -1,0 +1,95 @@
+body.b4 { 
+    font-family: Arial, sans-serif; 
+    background-color: #f3f4f6; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.b4-header { 
+    background-color: #ffffff; 
+    text-align: center; 
+    padding: 20px; 
+    border-bottom: 2px solid #e5e7eb; 
+}
+
+.b4-header hgroup h1 { 
+    margin: 0; 
+    color: #111827; 
+}
+
+.b4-header hgroup h2 { 
+    margin: 5px 0 0; 
+    color: #6b7280; 
+    font-size: 16px; 
+    font-weight: normal; 
+}
+
+.b4-main { 
+    max-width: 1000px; 
+    margin: 20px auto; 
+    padding: 0 20px; 
+    display: flex; 
+    gap: 20px; 
+}
+
+.b4-content { 
+    flex: 3; 
+    background: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+}
+
+.b4-aside { 
+    flex: 1; 
+    background: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+    height: fit-content; 
+}
+
+.video-container { 
+    margin-top: 15px; 
+}
+
+.b4-video { 
+    width: 100%; 
+    border-radius: 8px; 
+    background-color: #000000; 
+    border: 1px solid #d1d5db; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
+}
+
+.b4-audio { 
+    width: 100%; 
+    margin-top: 8px; 
+}
+
+.b4-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 10px; 
+}
+
+.b4-table, .b4-table th, .b4-table td { 
+    border: 1px solid #d1d5db; 
+}
+
+.b4-table th, .b4-table td { 
+    padding: 8px; 
+    text-align: center; 
+}
+
+.b4-table th { 
+    background-color: #f9fafb; 
+}
+
+.b4-footer { 
+    background-color: #1f2937; 
+    color: #9ca3af; 
+    text-align: center; 
+    padding: 15px; 
+    margin-top: 30px; 
+    font-size: 14px; 
+}

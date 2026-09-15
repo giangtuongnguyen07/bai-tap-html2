@@ -1,0 +1,135 @@
+body.b6 {
+    font-family: Arial, sans-serif;
+    background-color: #e0f2fe;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+.b6-main {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.logo {
+    color: #0284c7;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.b6-main h2 {
+    text-align: center;
+    color: #1e293b;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.b6-fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+.b6-fieldset legend {
+    font-weight: bold;
+    color: #0f172a;
+    padding: 0 8px;
+    font-size: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #334155;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-group input, 
+.form-group select {
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: #0284c7;
+}
+
+.output-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.output-group label {
+    margin-bottom: 0;
+}
+
+output {
+    color: #0284c7;
+    font-size: 16px;
+}
+
+.sub-text {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.note-text {
+    font-size: 12px;
+    color: #64748b;
+    margin: 5px 0 0 0;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #ea580c;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #c2410c;
+}

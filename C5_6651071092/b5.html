@@ -4,44 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng ký tài khoản - ShopVN</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f0fdf4; margin: 0; padding: 20px; }
-        main { max-width: 650px; margin: 0 auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
-        h2 { text-align: center; color: #15803d; margin-top: 0; }
-        fieldset { border: 1px solid #bbf7d0; background-color: #f0fdf4; border-radius: 8px; padding: 15px; margin-bottom: 20px; }
-        legend { font-weight: bold; color: #166534; padding: 0 8px; }
-        .form-group { margin-bottom: 12px; display: flex; align-items: center; }
-        .form-group label { width: 180px; font-size: 14px; font-weight: 500; }
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group input[type="password"],
-        .form-group input[type="tel"],
-        .form-group input[type="url"],
-        .form-group input[type="number"],
-        .form-group input[type="date"],
-        .form-group input[type="search"],
-        .form-group input[type="file"] { flex: 1; padding: 6px 10px; border: 1px solid #cbd5e1; border-radius: 4px; }
-        .btn-container { text-align: center; margin-top: 15px; }
-        button, input[type="submit"], input[type="reset"] { padding: 8px 20px; margin: 0 5px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
-        input[type="submit"] { background-color: #2563eb; color: white; }
-        input[type="reset"] { background-color: #64748b; color: white; }
-    </style>
+    <link rel="stylesheet" href="b5.css">
 </head>
-<body>
-    <main>
+<body class="b5">
+    <main class="b5-main">
         <section>
             <h2>Đăng ký tài khoản mới</h2>
             <form action="xu_ly_dangky.php" method="POST" enctype="multipart/form-data" name="formDangKy" id="formDangKy">
                 
-                <fieldset>
+                <fieldset class="b5-fieldset">
                     <legend>Thông tin cơ bản</legend>
                     <div class="form-group">
                         <label for="hoten">Họ và tên:</label>
-                        <input type="text" name="hoten" id="hoten" placeholder="Nguyễn Văn An" required maxlength="100">
+                        <input type="text" name="hoten" id="hoten" placeholder="" required maxlength="100">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                        <input type="email" name="email" id="email" placeholder="" required>
                     </div>
                     <div class="form-group">
                         <label for="matkhau">Mật khẩu:</label>
@@ -49,15 +28,15 @@
                     </div>
                     <div class="form-group">
                         <label for="sdt">Số điện thoại:</label>
-                        <input type="tel" name="sdt" id="sdt" pattern="[0-9]{10}" placeholder="0901234567">
+                        <input type="tel" name="sdt" id="sdt" pattern="[0-9]{10}" placeholder="">
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="b5-fieldset">
                     <legend>Thông tin cá nhân</legend>
                     <div class="form-group">
                         <label for="tuoi">Tuổi:</label>
-                        <input type="number" name="tuoi" id="tuoi" min="16" max="99" step="1" value="18">
+                        <input type="number" name="tuoi" id="tuoi" min="16" max="99" step="1" value="">
                     </div>
                     <div class="form-group">
                         <label for="ngaysinh">Ngày sinh:</label>
@@ -75,7 +54,7 @@
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="b5-fieldset">
                     <legend>Sở thích & Cài đặt</legend>
                     <div class="form-group">
                         <label for="soikim">Tìm kiếm sở thích:</label>
@@ -93,7 +72,7 @@
                     </div>
                     <div class="form-group">
                         <label for="website">Website cá nhân:</label>
-                        <input type="url" name="website" id="website" placeholder="https://example.com">
+                        <input type="url" name="website" id="website" placeholder="">
                     </div>
                     <div class="form-group">
                         <label for="avatar">Ảnh đại diện:</label>
